@@ -1,9 +1,3 @@
-# Node.js
-node_modules/
-package-lock.json
-
-# 環境変数
 .env
-
-# Mac
+node_modules/
 .DS_Store
