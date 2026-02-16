@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penguin Chatbot</title>
+<style>
+body { font-family: Arial; background:#f5f5f5; display:flex; flex-direction:column; align-items:center; margin:0; padding:0;}
+.container { max-width:600px; width:100%; margin-top:40px; padding:20px; text-align:center;}
+#penguin-container { position:relative; width:250px; height:448px; margin:0 auto 20px;}
+#penguin-body, #penguin-mouth { width:100%; height:100%; display:block;}
+#penguin-mouth { position:absolute; left:145px; top:175px; width:60px; height:65px; transform-origin:50% 50%; pointer-events:none;}
+.mouth-moving { animation: talk 0.3s infinite;}
+@keyframes talk {0%,100%{transform:scaleY(1);}50%{transform:scaleY(1.5);}}
+#chat {width:100%; height:300px; border:1px solid #ccc; background:#fff; padding:10px; overflow-y:auto; margin-bottom:10px;}
+.message.user {text-align:right; color:#004488;}
+.message.bot {text-align:left; color:#0a7722;}
+#user-input {width:calc(100% - 100px); padding:10px; font-size:16px;}
+#send-btn {width:80px; padding:10px; font-size:16px; margin-left:10px; background:#0066cc; color:#fff; border:none; border-radius:4px; cursor:pointer;}
+#send-btn:hover {background:#004c99;}
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="penguin-container">
+        <img id="penguin-body" src="penguin_body.png" alt="Penguin body">
+        <img id="penguin-mouth" src="mouth.png" alt="Penguin mouth">
+    </div>
+    <div id="chat"></div>
+    <div style="display:flex; width:100%;">
+        <input type="text" id="user-input" placeholder="質問を入力…">
+        <button id="send-btn">送信</button>
+    </div>
+</div>
+
+<script>
+const mouth = document.getElementById('penguin-mouth');
+const chat = document.getElementById('chat');
+const input = document.getElementById('user-input');
+const sendBtn = document.getElementById('send-btn');
+
+function appendMessage(role, text){
+    const div = document.createElement('div');
+    div.className = `message ${role}`;
+    div.textContent = text;
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+}
+
+function startMouthMovement(duration){
+    mouth.classList.add('mouth-moving');
+    setTimeout(()=>mouth.classList.remove('mouth-moving'), duration);
+}
+
+async function askChatGPT(message){
+    const res = await fetch("/chat",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({message})
+    });
+    const data = await res.json();
+    return data.reply;
+}
+
+async function handleSend(){
+    const message = input.value.trim();
+    if(!message) return;
+    appendMessage("user", message);
+    input.value="";
+    startMouthMovement(3000);
+    try{
+        const reply = await askChatGPT(message);
+        appendMessage("bot", reply);
+    }catch(e){
+        appendMessage("bot","すみません、応答できませんでした。");
+    }
+}
+
+sendBtn.addEventListener("click", handleSend);
+input.addEventListener("keydown",(e)=>{if(e.key==="Enter") handleSend();});
+</script>
+</body>
+</html>
