@@ -1,7 +1,7 @@
 // server.js
 import express from "express";
 import dotenv from "dotenv";
-import fetch from "node-fetch";
+//import fetch from "node-fetch";
 import cors from "cors";
 
 dotenv.config();
@@ -23,14 +23,14 @@ app.post("/chat", async (req, res) => {
     const userMessage = req.body.message;
 
     // OpenRouter へのリクエスト
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    const res = await fetch("https://penguin-chatbot.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
       },
       body: JSON.stringify({
-        model: "stepfun/step-3.5-flash",
+        model: "google/gemini-2.0-flash-exp:free",
         messages: [
           {
             role: "system",
