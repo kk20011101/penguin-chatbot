@@ -20,17 +20,15 @@ app.post("/chat", async (req, res) => {
   console.log("ユーザーからメッセージを受信:", req.body.message);
 
   try {
-    // --- server.js の fetch 部分をこれに差し替え ---
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "https://render.com", // 必須な場合があります
-        "X-Title": "Penguin Chatbot"          // 必須な場合があります
+        "HTTP-Referer": "https://render.com",
+        "X-Title": "Penguin Chatbot"
       },
       body: JSON.stringify({
-        // モデル名を最も安定しているものに変更
         model: "google/gemini-2.0-flash-001", 
         messages: [
           { role: "system", content: `あなたはアシスタントです。参考情報: ${siteText}` },
@@ -39,15 +37,18 @@ app.post("/chat", async (req, res) => {
       })
     });
 
-    console.log("OpenRouterにリクエストを送信しました。ステータス:", response.status);
-
+    // ここで一回だけ定義します
     const data = await response.json();
-    console.log("OpenRouterからデータを受信しました。");
+    console.log("OpenRouterからの生レスポンス:", JSON.stringify(data));
 
-    const data = await response.json();
-    console.log("生データ:", JSON.stringify(data)); // これを足すと原因が100%わかります
-
+    // dataの中身を安全に取り出す
     const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
+    
+    // もしエラーメッセージが含まれていたらそれもログに出す
+    if (data.error) {
+      console.error("OpenRouter側でエラーが発生しています:", data.error.message);
+    }
+
     res.json({ reply: reply + " 🐧" });
 
   } catch (error) {
