@@ -20,15 +20,18 @@ app.post("/chat", async (req, res) => {
   console.log("ユーザーからメッセージを受信:", req.body.message);
 
   try {
+    // --- server.js の fetch 部分をこれに差し替え ---
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "https://render.com", // OpenRouterにはこれが必要な場合があります
+        "HTTP-Referer": "https://render.com", // 必須な場合があります
+        "X-Title": "Penguin Chatbot"          // 必須な場合があります
       },
       body: JSON.stringify({
-        model: "google/gemini-2.0-flash-exp:free",
+        // モデル名を最も安定しているものに変更
+        model: "google/gemini-2.0-flash-001", 
         messages: [
           { role: "system", content: `あなたはアシスタントです。参考情報: ${siteText}` },
           { role: "user", content: req.body.message }
