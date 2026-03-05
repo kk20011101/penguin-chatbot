@@ -53,7 +53,8 @@ function startMouthMovement(duration){
 }
 
 async function askChatGPT(message){
-    const res = await fetch("/chat",{
+    // "/" だけではなく、RenderのURLを直接入れる（例：https://xxx.onrender.com/chat）
+    const res = await fetch("https://penguin-chatbot.onrender.com/chat",{ 
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({message})
