@@ -44,6 +44,9 @@ app.post("/chat", async (req, res) => {
     const data = await response.json();
     console.log("OpenRouterからデータを受信しました。");
 
+    const data = await response.json();
+    console.log("生データ:", JSON.stringify(data)); // これを足すと原因が100%わかります
+
     const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
     res.json({ reply: reply + " 🐧" });
 
