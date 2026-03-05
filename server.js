@@ -1,7 +1,5 @@
-// server.js
 import express from "express";
 import dotenv from "dotenv";
-//import fetch from "node-fetch";
 import cors from "cors";
 
 dotenv.config();
@@ -9,52 +7,48 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static("public")); // public フォルダ配下を静的配信
+app.use(express.static("public"));
 
-console.log("APIキー:", process.env.OPENROUTER_API_KEY?.slice(0,5) + "…");
+// 起動時に環境変数が読み込めているかチェック
+console.log("--- サーバー起動チェック ---");
+console.log("PORT:", process.env.PORT);
+console.log("APIキー(頭5文字):", process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.slice(0, 5) : "設定されていません！");
 
-// 簡単なテキストでテスト用
 const siteText = "東京確率論セミナー2025年度の概要情報";
 
-// /chat エンドポイント
 app.post("/chat", async (req, res) => {
-  try {
-    // ユーザーからのメッセージ
-    const userMessage = req.body.message;
+  console.log("ユーザーからメッセージを受信:", req.body.message);
 
-    // OpenRouter へのリクエスト
-    const res = await fetch("https://penguin-chatbot.onrender.com/chat", {
+  try {
+    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
+        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
+        "HTTP-Referer": "https://render.com", // OpenRouterにはこれが必要な場合があります
       },
       body: JSON.stringify({
         model: "google/gemini-2.0-flash-exp:free",
         messages: [
-          {
-            role: "system",
-            content: `あなたは東京確率セミナー2025年度の情報に基づいて質問に答えるアシスタントです。参考情報: ${siteText}`
-          },
-          { role: "user", content: userMessage }
-        ],
-        temperature: 0.7
+          { role: "system", content: `あなたはアシスタントです。参考情報: ${siteText}` },
+          { role: "user", content: req.body.message }
+        ]
       })
     });
 
+    console.log("OpenRouterにリクエストを送信しました。ステータス:", response.status);
+
     const data = await response.json();
+    console.log("OpenRouterからデータを受信しました。");
 
-    // 応答テキストを取り出す
-    const reply = data?.choices?.[0]?.message?.content || "すみません、回答できませんでした。";
-
+    const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
     res.json({ reply: reply + " 🐧" });
 
   } catch (error) {
-    console.error("API error:", error);
-    res.status(500).json({ error: "API error" });
+    console.error("重大なエラーが発生しました:", error.message);
+    res.status(500).json({ error: error.message });
   }
 });
 
-// サーバー起動
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`サーバーがポート ${PORT} で稼働中`));
