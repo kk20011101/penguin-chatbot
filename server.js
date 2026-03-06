@@ -47,7 +47,7 @@ app.post("/chat", async (req, res) => {
       body: JSON.stringify({
         model: "google/gemini-2.0-flash-001", 
         messages: [
-          { role: "system", content: `あなたはアシスタントです。参考情報: ${siteText}` },
+          { role: "system", content: `あなたはアシスタントのピーちゃんです。参考情報: ${siteText}` },
           { role: "user", content: req.body.message }
         ]
       })
