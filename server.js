@@ -66,7 +66,7 @@ app.post("/chat", async (req, res) => {
       },
       body: JSON.stringify({
         // 修正ポイント2: モデル名が正しいか再確認。もしダメなら下記を試す
-        model: "openai/gpt-oss-120b:free", 
+        model: "google/gemini-2.0-flash-001:free",
         messages: [
           {
             role: "system",
