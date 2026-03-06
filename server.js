@@ -4,13 +4,17 @@ import cors from "cors";
 // server.js の上の方にこれを追加
 import fs from 'fs';
 
-// siteText をファイルから読み込む形に変える
+// サーバー起動時にファイルを読み込む
 let siteText = "";
 try {
+  // UTF-8形式でファイルを読み込む
   siteText = fs.readFileSync('./data.txt', 'utf-8');
+  console.log("--- ファイルから情報を読み込みました ---");
 } catch (err) {
-  siteText = "HPの情報がまだ読み込まれていません。";
+  console.log("--- data.txtが見つからないため、初期値を使用します ---");
+  siteText = "セミナーの詳細はWebサイトを確認してください。";
 }
+
 
 
 dotenv.config();
