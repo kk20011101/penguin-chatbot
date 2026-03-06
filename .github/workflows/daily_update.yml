@@ -5,11 +5,17 @@ on:
     - cron: '0 0 * * *' # 毎日、日本時間の午前9時(UTC 0:00)に実行
   workflow_dispatch:      # GitHub上で手動実行できるボタンも追加
 
+concurrency:
+  group: daily-hp-update
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v3
