@@ -66,7 +66,7 @@ app.post("/chat", async (req, res) => {
       },
       body: JSON.stringify({
         // 修正ポイント2: モデル名が正しいか再確認。もしダメなら下記を試す
-        model: "meta-llama/llama-3.1-8b-instruct:free",
+        model: "google/gemini-2.0-flash-001",
         messages: [
           {
             role: "system",
