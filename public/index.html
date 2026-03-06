@@ -53,12 +53,17 @@ function startMouthMovement(duration){
 }
 
 async function askChatGPT(message){
-    // "/" だけではなく、RenderのURLを直接入れる（例：https://xxx.onrender.com/chat）
-    const res = await fetch("https://penguin-chatbot.onrender.com/chat",{ 
+    const res = await fetch("/chat",{ 
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({message})
     });
+
+    if(!res.ok){
+        const data = await res.json().catch(()=>({}));
+        throw new Error(data.error || `HTTP ${res.status}`);
+    }
+
     const data = await res.json();
     return data.reply;
 }
@@ -73,7 +78,7 @@ async function handleSend(){
         const reply = await askChatGPT(message);
         appendMessage("bot", reply);
     }catch(e){
-        appendMessage("bot","すみません、応答できませんでした。");
+        appendMessage("bot",`すみません、応答できませんでした。${e.message ? ` (${e.message})` : ""}`);
     }
 }
 

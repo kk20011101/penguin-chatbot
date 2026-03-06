@@ -1,2 +1,2 @@
-streamlit>=1.32.0
-openai>=1.12.0
+# 現在の本番運用では Python スクリプトは未使用です。
+# データ更新は GitHub Actions から `node scrape.js` を実行して行っています。

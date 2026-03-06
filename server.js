@@ -2,16 +2,27 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 1. 最初は空で宣言（let を使う）
 let siteText = "";
 
+const dataFilePath = path.join(__dirname, 'data.txt');
+
 try {
+  if (!fs.existsSync(dataFilePath)) {
+    throw new Error('データファイルが存在しません');
+  }
+
   // UTF-8形式でファイルを読み込む
-  siteText = fs.readFileSync('./data.txt', 'utf-8');
-  console.log("--- ファイルから情報を読み込みました ---");
+  siteText = fs.readFileSync(dataFilePath, 'utf-8');
+  console.log(`--- ファイルから情報を読み込みました: ${path.basename(dataFilePath)} ---`);
 } catch (err) {
-  console.log("--- data.txtが見つからないため、初期値を使用します ---");
+  console.log("--- データファイルが見つからないため、初期値を使用します ---");
   // ファイルがない場合のデフォルト値
   siteText = "セミナーの詳細はWebサイトを確認してください。";
 }
@@ -27,10 +38,6 @@ app.use(express.static("public"));
 console.log("--- サーバー起動チェック ---");
 console.log("PORT:", process.env.PORT);
 console.log("APIキー(頭5文字):", process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.slice(0, 5) : "設定されていません！");
-
-// 2. 【修正箇所】 const を取って、既存の変数に代入する形にします
-// もし「ファイルの内容」ではなく「この固定文字」を優先したい場合はこのままでOKです
-siteText = "東京確率論セミナー2025年度の概要情報"; 
 
 app.post("/chat", async (req, res) => {
   console.log("ユーザーからメッセージを受信:", req.body.message);
@@ -56,11 +63,13 @@ app.post("/chat", async (req, res) => {
     const data = await response.json();
     console.log("OpenRouterからの生レスポンス:", JSON.stringify(data));
 
-    const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
-    
-    if (data.error) {
-      console.error("OpenRouter側でエラーが発生しています:", data.error.message);
+    if (!response.ok) {
+      const errorMessage = data?.error?.message || `OpenRouter API error: ${response.status}`;
+      console.error("OpenRouter側でエラーが発生しています:", errorMessage);
+      return res.status(response.status).json({ error: errorMessage });
     }
+
+    const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
 
     res.json({ reply: reply + " 🐧" });
 
