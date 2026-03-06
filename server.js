@@ -1,21 +1,20 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-// server.js の上の方にこれを追加
 import fs from 'fs';
 
-// サーバー起動時にファイルを読み込む
+// 1. 最初は空で宣言（let を使う）
 let siteText = "";
+
 try {
   // UTF-8形式でファイルを読み込む
   siteText = fs.readFileSync('./data.txt', 'utf-8');
   console.log("--- ファイルから情報を読み込みました ---");
 } catch (err) {
   console.log("--- data.txtが見つからないため、初期値を使用します ---");
+  // ファイルがない場合のデフォルト値
   siteText = "セミナーの詳細はWebサイトを確認してください。";
 }
-
-
 
 dotenv.config();
 
@@ -29,7 +28,9 @@ console.log("--- サーバー起動チェック ---");
 console.log("PORT:", process.env.PORT);
 console.log("APIキー(頭5文字):", process.env.OPENROUTER_API_KEY ? process.env.OPENROUTER_API_KEY.slice(0, 5) : "設定されていません！");
 
-const siteText = "東京確率論セミナー2025年度の概要情報";
+// 2. 【修正箇所】 const を取って、既存の変数に代入する形にします
+// もし「ファイルの内容」ではなく「この固定文字」を優先したい場合はこのままでOKです
+siteText = "東京確率論セミナー2025年度の概要情報"; 
 
 app.post("/chat", async (req, res) => {
   console.log("ユーザーからメッセージを受信:", req.body.message);
@@ -52,14 +53,11 @@ app.post("/chat", async (req, res) => {
       })
     });
 
-    // ここで一回だけ定義します
     const data = await response.json();
     console.log("OpenRouterからの生レスポンス:", JSON.stringify(data));
 
-    // dataの中身を安全に取り出す
     const reply = data?.choices?.[0]?.message?.content || "AIからの返答が空でした。";
     
-    // もしエラーメッセージが含まれていたらそれもログに出す
     if (data.error) {
       console.error("OpenRouter側でエラーが発生しています:", data.error.message);
     }
