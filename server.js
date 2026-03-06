@@ -43,6 +43,18 @@ app.post("/chat", async (req, res) => {
   console.log("ユーザーからメッセージを受信:", req.body.message);
 
   try {
+    const now = new Date();
+    const nowJst = now.toLocaleString('ja-JP', {
+      timeZone: 'Asia/Tokyo',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -54,7 +66,10 @@ app.post("/chat", async (req, res) => {
       body: JSON.stringify({
         model: "google/gemini-2.0-flash-001", 
         messages: [
-          { role: "system", content: `あなたはアシスタントのピーちゃんです。参考情報: ${siteText}` },
+          {
+            role: "system",
+            content: `あなたはアシスタントのピーちゃんです。現在日時（日本時間/JST）は ${nowJst} です。この日時を基準に、セミナー情報が過去か未来かを判断してください。参考情報: ${siteText}`
+          },
           { role: "user", content: req.body.message }
         ]
       })
