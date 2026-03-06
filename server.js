@@ -60,18 +60,22 @@ app.post("/chat", async (req, res) => {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "https://render.com",
+        // 修正ポイント1: 実際のアプリのURL、または空でない適切なURLを入れる
+        "HTTP-Referer": "https://penguin-chatbot.onrender.com", 
         "X-Title": "Penguin Chatbot"
       },
       body: JSON.stringify({
-        model: "openai/gpt-oss-120b:free",
+        // 修正ポイント2: モデル名が正しいか再確認。もしダメなら下記を試す
+        model: "openai/gpt-oss-120b:free", 
         messages: [
           {
             role: "system",
-            content: `あなたはアシスタントのピーちゃんです。現在日時（日本時間/JST）は ${nowJst} です。この日時を基準に、セミナー情報が過去か未来かを判断してください。参考情報: ${siteText}`
+            content: `あなたはアシスタントのピーちゃんです。現在日時（日本時間/JST）は ${nowJst} です。参考情報: ${siteText}`
           },
           { role: "user", content: req.body.message }
-        ]
+        ],
+        // 修正ポイント3: 無料モデルでタイムアウトを防ぐための安全策
+        timeout: 30000 
       })
     });
 
