@@ -4,7 +4,7 @@ import fs from 'fs';
 
 const TARGET_PAGES = [
   {
-    label: '2027年度',
+    label: 'セミナー情報',
     url: 'https://sites.google.com/view/tokyo-probability-seminar23'
   }
 ];
