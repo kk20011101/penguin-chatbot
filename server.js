@@ -1,6 +1,17 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+// server.js の上の方にこれを追加
+import fs from 'fs';
+
+// siteText をファイルから読み込む形に変える
+let siteText = "";
+try {
+  siteText = fs.readFileSync('./data.txt', 'utf-8');
+} catch (err) {
+  siteText = "HPの情報がまだ読み込まれていません。";
+}
+
 
 dotenv.config();
 
