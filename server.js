@@ -64,7 +64,7 @@ app.post("/chat", async (req, res) => {
         "X-Title": "Penguin Chatbot"
       },
       body: JSON.stringify({
-        model: "google/gemini-2.0-flash-001", 
+        model: "openai/gpt-oss-120b:free",
         messages: [
           {
             role: "system",
