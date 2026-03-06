@@ -5,7 +5,7 @@ import fs from 'fs';
 async function scrape() {
   try {
     // ターゲットのURL
-    const url = "https://sites.google.com/view/tokyo-probability-seminar23/"; 
+    const url = "https://sites.google.com/view/tokyo-probability-seminar23/2026年度?authuser=0"; 
     console.log(`${url} からセミナー情報を取得中...`);
 
     const { data } = await axios.get(url, {
