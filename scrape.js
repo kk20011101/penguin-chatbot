@@ -5,15 +5,7 @@ import fs from 'fs';
 const TARGET_PAGES = [
   {
     label: '2027年度',
-    url: 'https://sites.google.com/view/tokyo-probability-seminar23/2027年度?authuser=0'
-  },
-  {
-    label: '2026年度',
-    url: 'https://sites.google.com/view/tokyo-probability-seminar23/2026年度?authuser=0'
-  },
-  {
-    label: '過去のセミナー',
-    url: 'https://sites.google.com/view/tokyo-probability-seminar23/過去のセミナー?authuser=0'
+    url: 'https://sites.google.com/view/tokyo-probability-seminar23'
   }
 ];
 
