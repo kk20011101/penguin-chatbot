@@ -15,8 +15,6 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 より詳細な情報はコチラ
 
-2026年4月20日（月）場所： 早稲田大学西早稲田キャンパス５１号館１８階18-06号室 講師: Mathav Murugan 氏時間: 16:00 - 17:30 Title: A simplified characterization of stable-like heat kernel estimatesAbstract: We obtain a characterization of two-sided stable-like heat kernel estimates, modelled on symmetric stable processes in Euclidean space. Our characterization confirms a conjecture of Grigor’yan, E. Hu, and J. Hu, and is based on two-sided bounds on the jump kernel together with upper bounds on capacity across annuli.
-
 2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: Abstract: 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
@@ -28,6 +26,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 2026年7月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 坪谷 玲緒 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年4月13日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 白石 大典 氏時間: 16:00 - 17:30 Title: 4次元単純ランダムウォークの交叉と長距離パーコレーションの関係Abstract: よく知られているように、4次元ブラウン運動の軌跡は単純曲線になる。一方で4次元単純ランダムウォークの軌跡は、ループ除去ランダムウォークの長さに非自明な対数項が現れる程度のループを持つ。本講演では、4次元単純ランダムウォークの軌跡の交叉とある長距離パーコレーションモデルとの関係性について解説する。
+
+2026年4月20日（月）場所： 早稲田大学西早稲田キャンパス５１号館１８階18-06号室 講師: Mathav Murugan 氏時間: 16:00 - 17:30 Title: A simplified characterization of stable-like heat kernel estimatesAbstract: We obtain a characterization of two-sided stable-like heat kernel estimates, modelled on symmetric stable processes in Euclidean space. Our characterization confirms a conjecture of Grigor’yan, E. Hu, and J. Hu, and is based on two-sided bounds on the jump kernel together with upper bounds on capacity across annuli.
 
 滞在研究者情報Sam McKeown (Wiscoin university, USA) 2026/3/27-2026/4/15 受入: 中島秀太Clement Cosco (Université Paris Dauphine ) 2026/4/2-2026/5/3 受入: 岡田いず海 && 中島秀太Mathav Murugan (UBC) 2026/4/19-2026/4/24 受入: 熊谷隆
 
@@ -44,8 +44,6 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 
 より詳細な情報はコチラ
 
-2026年4月20日（月）場所： 早稲田大学西早稲田キャンパス５１号館１８階18-06号室 講師: Mathav Murugan 氏時間: 16:00 - 17:30 Title: A simplified characterization of stable-like heat kernel estimatesAbstract: We obtain a characterization of two-sided stable-like heat kernel estimates, modelled on symmetric stable processes in Euclidean space. Our characterization confirms a conjecture of Grigor’yan, E. Hu, and J. Hu, and is based on two-sided bounds on the jump kernel together with upper bounds on capacity across annuli.
-
 2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: Abstract: 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
@@ -57,6 +55,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 2026年7月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 坪谷 玲緒 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年4月13日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 白石 大典 氏時間: 16:00 - 17:30 Title: 4次元単純ランダムウォークの交叉と長距離パーコレーションの関係Abstract: よく知られているように、4次元ブラウン運動の軌跡は単純曲線になる。一方で4次元単純ランダムウォークの軌跡は、ループ除去ランダムウォークの長さに非自明な対数項が現れる程度のループを持つ。本講演では、4次元単純ランダムウォークの軌跡の交叉とある長距離パーコレーションモデルとの関係性について解説する。
+
+2026年4月20日（月）場所： 早稲田大学西早稲田キャンパス５１号館１８階18-06号室 講師: Mathav Murugan 氏時間: 16:00 - 17:30 Title: A simplified characterization of stable-like heat kernel estimatesAbstract: We obtain a characterization of two-sided stable-like heat kernel estimates, modelled on symmetric stable processes in Euclidean space. Our characterization confirms a conjecture of Grigor’yan, E. Hu, and J. Hu, and is based on two-sided bounds on the jump kernel together with upper bounds on capacity across annuli.
 
 滞在研究者情報Sam McKeown (Wiscoin university, USA) 2026/3/27-2026/4/15 受入: 中島秀太Clement Cosco (Université Paris Dauphine ) 2026/4/2-2026/5/3 受入: 岡田いず海 && 中島秀太Mathav Murugan (UBC) 2026/4/19-2026/4/24 受入: 熊谷隆
 
