@@ -15,7 +15,7 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 より詳細な情報はコチラ
 
-2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: Abstract: 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: The maximum of 2d directed polymers. (Joint work with Shuta Nakajima and Ofer Zeitouni.)Abstract: Directed polymers can be described as a tilting of the simple random walk, where some local random noise can attract or repel the trajectory of the walk. In the subcritical regime of the two-dimensional model, the partition function is known to be asymptotically approximated by a Gaussian log-correlated field. In a work in collaboration with Shuta Nakajima and Ofer Zeitouni, we could refine this result by proving that the maximum of the partition function field converges to that of a branching Brownian motion, which is the source of the log-correlation. In this talk, I will introduce the model as well as the objects related to it and present our result. 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
 
@@ -44,7 +44,7 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 
 より詳細な情報はコチラ
 
-2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: Abstract: 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年4月27日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Clément Cosco 氏時間: 14:00 - 15:30 Title: The maximum of 2d directed polymers. (Joint work with Shuta Nakajima and Ofer Zeitouni.)Abstract: Directed polymers can be described as a tilting of the simple random walk, where some local random noise can attract or repel the trajectory of the walk. In the subcritical regime of the two-dimensional model, the partition function is known to be asymptotically approximated by a Gaussian log-correlated field. In a work in collaboration with Shuta Nakajima and Ofer Zeitouni, we could refine this result by proving that the maximum of the partition function field converges to that of a branching Brownian motion, which is the source of the log-correlation. In this talk, I will introduce the model as well as the objects related to it and present our result. 講師: Subhro Ghosh 氏時間: 16:00 - 17:30 Title: Abstract:
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
 
