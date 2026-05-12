@@ -17,7 +17,9 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
 
-2026年5月25日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 岡嵜 郁也 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年5月25日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 岡嵜 郁也 氏時間: 16:00 - 17:30 Title: 非局所ディリクレ形式に関する調和写像の微分に付随する接束上のマルチンゲールについてAbstract: リーマン多様体が高次のユークリッド空間に埋め込まれているという仮定の下では, その多様体に値を取る非局所ディリクレ形式に関する調和写像を変分原理に基づいて定義できる. 例えば分数冪ラプラシアンに関するディリクレ形式を考えた場合は, Da Lio-Rivi`ere (2011)で導入された分数冪ラプラシアンに関する調和写像に対応する. 本研究では値域の多様体の幾何と調和写像の関係を見ることを目的として, 調和写像にある程度の正則性を課し, その微分を確率過程を通して考察する. まず接束上の不連続なセミマルチンゲールに対する伊藤解析を, 第2基本形式などを用いてジャンプを定めることで定式化し, それを用いて接束上の不連続なマルチンゲールを導入する. また写像の定義域の空間として別のリーマン多様体と, その上のあるKillingベクトル場による変換で不変なディリクレ形式を考え, そのKillingベクトル場による調和写像の微分から定まるジャンプ過程が接束上のマルチンゲールとなることを紹介する.
+
+2026年6月15日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 一場 知之 氏時間: 16:00 - 17:30 Title: Feynman formula for discrete-time quantum walk and its applicationsAbstract: We explicitly connect (discrete-time) quantum walks on Z with a four-state Markov additive process via a Feynman-type formula. Using this representation, we derive a relation between the spectral decomposition of the Markov additive process and the limiting density of the homogeneous quantum walk. In addition, we consider a space-time rescaling of quantum walks, which leads to a system of quantum transport PDEs of Dirac type in continuous time and space with phase interaction and potential terms. Our probabilistic representation for this type of PDE offers its stochastic extension as well as an efficient Monte Carlo computational technique. This is joint work with Jean-Pierre Fouque and Ka Lok Lam.
 
 2026年6月22日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 永津 愛彩 氏時間: 16:00 - 17:30 Title: Abstract:
 
@@ -48,7 +50,9 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 
 2026年5月18日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 行徳 義弘 氏時間: 16:00 - 17:30 Title: Abstract:
 
-2026年5月25日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 岡嵜 郁也 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年5月25日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 岡嵜 郁也 氏時間: 16:00 - 17:30 Title: 非局所ディリクレ形式に関する調和写像の微分に付随する接束上のマルチンゲールについてAbstract: リーマン多様体が高次のユークリッド空間に埋め込まれているという仮定の下では, その多様体に値を取る非局所ディリクレ形式に関する調和写像を変分原理に基づいて定義できる. 例えば分数冪ラプラシアンに関するディリクレ形式を考えた場合は, Da Lio-Rivi`ere (2011)で導入された分数冪ラプラシアンに関する調和写像に対応する. 本研究では値域の多様体の幾何と調和写像の関係を見ることを目的として, 調和写像にある程度の正則性を課し, その微分を確率過程を通して考察する. まず接束上の不連続なセミマルチンゲールに対する伊藤解析を, 第2基本形式などを用いてジャンプを定めることで定式化し, それを用いて接束上の不連続なマルチンゲールを導入する. また写像の定義域の空間として別のリーマン多様体と, その上のあるKillingベクトル場による変換で不変なディリクレ形式を考え, そのKillingベクトル場による調和写像の微分から定まるジャンプ過程が接束上のマルチンゲールとなることを紹介する.
+
+2026年6月15日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 一場 知之 氏時間: 16:00 - 17:30 Title: Feynman formula for discrete-time quantum walk and its applicationsAbstract: We explicitly connect (discrete-time) quantum walks on Z with a four-state Markov additive process via a Feynman-type formula. Using this representation, we derive a relation between the spectral decomposition of the Markov additive process and the limiting density of the homogeneous quantum walk. In addition, we consider a space-time rescaling of quantum walks, which leads to a system of quantum transport PDEs of Dirac type in continuous time and space with phase interaction and potential terms. Our probabilistic representation for this type of PDE offers its stochastic extension as well as an efficient Monte Carlo computational technique. This is joint work with Jean-Pierre Fouque and Ka Lok Lam.
 
 2026年6月22日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 永津 愛彩 氏時間: 16:00 - 17:30 Title: Abstract:
 
