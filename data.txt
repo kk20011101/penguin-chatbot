@@ -15,6 +15,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 より詳細な情報はコチラ
 
+2026年9月10日（木）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Sung-Soo Byun 氏時間: TBA Title: Inhomogeneous Geometric Last Passage Percolation and the q-deformed Jacobi Unitary EnsembleAbstract: Since the pioneering work of Johansson, geometric last passage percolation (LPP) has become one of the central models in integrable probability, with many remarkable properties established over the past two decades. Most existing results, particularly those admitting explicit formulae, however, concern homogeneous environments. In this talk, I will discuss geometric LPP in a particular inhomogeneous environment. Our approach is based on a duality with a q-deformed analogue of the classical Jacobi unitary ensemble. Exploiting recent developments in the asymptotic spectral analysis of this random matrix model, I will present recent results on the law of large numbers, an explicit characterisation of the shape function, and the fluctuation behaviour of the last passage time.
+
 2026年4月13日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 白石 大典 氏時間: 16:00 - 17:30 Title: 4次元単純ランダムウォークの交叉と長距離パーコレーションの関係Abstract: よく知られているように、4次元ブラウン運動の軌跡は単純曲線になる。一方で4次元単純ランダムウォークの軌跡は、ループ除去ランダムウォークの長さに非自明な対数項が現れる程度のループを持つ。本講演では、4次元単純ランダムウォークの軌跡の交叉とある長距離パーコレーションモデルとの関係性について解説する。
 
 2026年4月20日（月）場所： 早稲田大学西早稲田キャンパス５１号館１８階18-06号室 講師: Mathav Murugan 氏時間: 16:00 - 17:30 Title: A simplified characterization of stable-like heat kernel estimatesAbstract: We obtain a characterization of two-sided stable-like heat kernel estimates, modelled on symmetric stable processes in Euclidean space. Our characterization confirms a conjecture of Grigor’yan, E. Hu, and J. Hu, and is based on two-sided bounds on the jump kernel together with upper bounds on capacity across annuli.
@@ -49,6 +51,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 今後の予定※ 今後の予定はこちら（服部哲弥氏のウェブサイト）でも確認できます．
 
 より詳細な情報はコチラ
+
+2026年9月10日（木）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: Sung-Soo Byun 氏時間: TBA Title: Inhomogeneous Geometric Last Passage Percolation and the q-deformed Jacobi Unitary EnsembleAbstract: Since the pioneering work of Johansson, geometric last passage percolation (LPP) has become one of the central models in integrable probability, with many remarkable properties established over the past two decades. Most existing results, particularly those admitting explicit formulae, however, concern homogeneous environments. In this talk, I will discuss geometric LPP in a particular inhomogeneous environment. Our approach is based on a duality with a q-deformed analogue of the classical Jacobi unitary ensemble. Exploiting recent developments in the asymptotic spectral analysis of this random matrix model, I will present recent results on the law of large numbers, an explicit characterisation of the shape function, and the fluctuation behaviour of the last passage time.
 
 2026年4月13日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２６号室講師: 白石 大典 氏時間: 16:00 - 17:30 Title: 4次元単純ランダムウォークの交叉と長距離パーコレーションの関係Abstract: よく知られているように、4次元ブラウン運動の軌跡は単純曲線になる。一方で4次元単純ランダムウォークの軌跡は、ループ除去ランダムウォークの長さに非自明な対数項が現れる程度のループを持つ。本講演では、4次元単純ランダムウォークの軌跡の交叉とある長距離パーコレーションモデルとの関係性について解説する。
 
