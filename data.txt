@@ -17,6 +17,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 2026年10月19日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 阪本 皓貴 氏時間: 16:00 - 17:30 Title: Singularity of harmonic measure on Poisson-Voronoi tessellations in hyperbolic spaces Abstract: Poisson-Voronoi tessellations provide natural examples of invariant random tilings of homogeneous spaces. Benjamini, Paquette, and Pfeffer proved that the nearest-neighbor random walk on the Poisson-Voronoi tessellation of the hyperbolic plane has positive drift and hence converges to the boundary circle. They further conjectured that its hitting measure on the boundary is singular with respect to Lebesgue measure. I will explain how this follows from an ergodic-theoretic argument based on rerooting relations, and briefly discuss the higher-dimensional case as well.
 
+2026年11月2日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 大石 皐遥 氏時間: 16:00 - 17:30 Title: TBAAbstract: TBA
+
 2026年11月9日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 三角 健太 氏時間: 16:00 - 17:30 Title: ディリクレ空間で、準至る所ベクトル束を作り、マルコフ過程に沿って準至る所ベクトルを平行移動する。Abstract: 準正則 Dirichlet 空間上において準ベクトル束の概念を定式化することにより、その分類量として第一 Stiefel–Whitney 類が自然に現れる。さらに、この枠組みに適合する接続の理論を公理的に構築することで、対応する右過程の軌道に沿ったベクトルの準至る所での平行移動を構成することが可能となる。この構成は、従来の Riemann 多様体あるいは sub-Riemann 多様体上の Brown 運動に沿う確率平行移動を包含するだけでなく、一般のジャンプ型過程に沿う確率平行移動も含む。さらには、RCD 空間など、特異空間上の Brown 運動に沿う確率平行移動さえも導く。したがって本理論は、滑らかさに依存していた従来の平行移動の概念を、準正則 Dirichlet 形式と右過程を基礎とする非滑らかな対象へ拡張する一般的な枠組みを与えるものとなる。
 
 2026年11月16日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）００２号室講師: Federica Iacovissi 氏時間: 16:00 - 17:30 Title: Abstract:
@@ -69,6 +71,8 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 より詳細な情報はコチラ
 
 2026年10月19日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 阪本 皓貴 氏時間: 16:00 - 17:30 Title: Singularity of harmonic measure on Poisson-Voronoi tessellations in hyperbolic spaces Abstract: Poisson-Voronoi tessellations provide natural examples of invariant random tilings of homogeneous spaces. Benjamini, Paquette, and Pfeffer proved that the nearest-neighbor random walk on the Poisson-Voronoi tessellation of the hyperbolic plane has positive drift and hence converges to the boundary circle. They further conjectured that its hitting measure on the boundary is singular with respect to Lebesgue measure. I will explain how this follows from an ergodic-theoretic argument based on rerooting relations, and briefly discuss the higher-dimensional case as well.
+
+2026年11月2日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 大石 皐遥 氏時間: 16:00 - 17:30 Title: TBAAbstract: TBA
 
 2026年11月9日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 三角 健太 氏時間: 16:00 - 17:30 Title: ディリクレ空間で、準至る所ベクトル束を作り、マルコフ過程に沿って準至る所ベクトルを平行移動する。Abstract: 準正則 Dirichlet 空間上において準ベクトル束の概念を定式化することにより、その分類量として第一 Stiefel–Whitney 類が自然に現れる。さらに、この枠組みに適合する接続の理論を公理的に構築することで、対応する右過程の軌道に沿ったベクトルの準至る所での平行移動を構成することが可能となる。この構成は、従来の Riemann 多様体あるいは sub-Riemann 多様体上の Brown 運動に沿う確率平行移動を包含するだけでなく、一般のジャンプ型過程に沿う確率平行移動も含む。さらには、RCD 空間など、特異空間上の Brown 運動に沿う確率平行移動さえも導く。したがって本理論は、滑らかさに依存していた従来の平行移動の概念を、準正則 Dirichlet 形式と右過程を基礎とする非滑らかな対象へ拡張する一般的な枠組みを与えるものとなる。
 
