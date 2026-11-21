@@ -15,7 +15,7 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23?authuser=0
 
 より詳細な情報はコチラ
 
-2026年12月7日（月）講師: 中島秀太 氏 （プライベートセミナー）時間: 13:45 - 15:15 Title: The Critical 2D KPZ ProcessAbstract: KPZ方程式は、非平衡な界面成長を記述する確率偏微分方程式である。KPZ方程式の振る舞いは次元によって大きく異なり、劣臨界次元である1次元では、解の構成およびその性質がよく理解されている。一方、2次元は臨界次元と呼ばれ、強い非線形項の効果のため、その構成と性質は長年未解決であった。本講演では、最近構成された2次元臨界KPZ過程について概説する。場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: Raphaël Lefevere 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年12月7日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）００２号室講師: 中島秀太 氏 （プレセミナー）時間: 13:45 - 15:15 Title: The Critical 2D KPZ ProcessAbstract: KPZ方程式は、非平衡な界面成長を記述する確率偏微分方程式である。KPZ方程式の振る舞いは次元によって大きく異なり、劣臨界次元である1次元では、解の構成およびその性質がよく理解されている。一方、2次元は臨界次元と呼ばれ、強い非線形項の効果のため、その構成と性質は長年未解決であった。本講演では、最近構成された2次元臨界KPZ過程について概説する。場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: Raphaël Lefevere 氏時間: 16:00 - 17:30 Title: One generating function for various models: a renormalization group approachAbstract: A common form of the scaled cumulant generating function for counting variables appears in several models of diffusive transport and in the statistics of spanning paths in loop models. I will discuss how it arises for crossing counts in the hierarchical model introduced by Lefevere and Tasaki to study conduction in random environments. The recursive construction leads to a renormalization relation that becomes particularly simple in an angular variable. Combining this relation with estimates obtained from a size-biased coupling, we determine the limiting generating function for all real counting fields and derive the corresponding large-deviation rate function. I will also discuss briefly the connections with the other models.
 
 2026年12月14日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 佐藤 ふたば 氏時間: 16:00 - 17:30 Title: Abstract:
 
@@ -68,7 +68,7 @@ URL: https://sites.google.com/view/tokyo-probability-seminar23/2026%E5%B9%B4%E5%
 
 より詳細な情報はコチラ
 
-2026年12月7日（月）講師: 中島秀太 氏 （プライベートセミナー）時間: 13:45 - 15:15 Title: The Critical 2D KPZ ProcessAbstract: KPZ方程式は、非平衡な界面成長を記述する確率偏微分方程式である。KPZ方程式の振る舞いは次元によって大きく異なり、劣臨界次元である1次元では、解の構成およびその性質がよく理解されている。一方、2次元は臨界次元と呼ばれ、強い非線形項の効果のため、その構成と性質は長年未解決であった。本講演では、最近構成された2次元臨界KPZ過程について概説する。場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: Raphaël Lefevere 氏時間: 16:00 - 17:30 Title: Abstract:
+2026年12月7日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）００２号室講師: 中島秀太 氏 （プレセミナー）時間: 13:45 - 15:15 Title: The Critical 2D KPZ ProcessAbstract: KPZ方程式は、非平衡な界面成長を記述する確率偏微分方程式である。KPZ方程式の振る舞いは次元によって大きく異なり、劣臨界次元である1次元では、解の構成およびその性質がよく理解されている。一方、2次元は臨界次元と呼ばれ、強い非線形項の効果のため、その構成と性質は長年未解決であった。本講演では、最近構成された2次元臨界KPZ過程について概説する。場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: Raphaël Lefevere 氏時間: 16:00 - 17:30 Title: One generating function for various models: a renormalization group approachAbstract: A common form of the scaled cumulant generating function for counting variables appears in several models of diffusive transport and in the statistics of spanning paths in loop models. I will discuss how it arises for crossing counts in the hierarchical model introduced by Lefevere and Tasaki to study conduction in random environments. The recursive construction leads to a renormalization relation that becomes particularly simple in an angular variable. Combining this relation with estimates obtained from a size-biased coupling, we determine the limiting generating function for all real counting fields and derive the corresponding large-deviation rate function. I will also discuss briefly the connections with the other models.
 
 2026年12月14日（月）場所： 東京大学大学院数理科学研究科 数理科学研究科棟（駒場）１２２号室講師: 佐藤 ふたば 氏時間: 16:00 - 17:30 Title: Abstract:
 
